@@ -12,15 +12,15 @@ export default {
       ],
       languages: [
         {
-          flag:"../assets/business/images/en.png",
+          flag:"/public/flag/en.png",
           language: "ENGLISH",
         },
         {
-          flag:"../assets/business/images/fr.png",
+          flag:"/public/flag/fr.png",
           language: "FRANCAIS",
         },
         {
-          flag:"../assets/business/images/du.png",
+          flag:"/public/flag/de.png",
           language: "DEUTSCH",
         },
       ],
