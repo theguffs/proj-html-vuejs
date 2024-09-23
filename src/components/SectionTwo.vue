@@ -89,10 +89,27 @@ $button-border: grey;
     text-align: left;
     padding: 20px;
     width: calc(33% - 20px);
+    transition: transform 0.3s ease;
 
-    .feature-icon {
-      font-size: 40px;
-      margin: 20px;
+    &:hover {
+      .feature-icon {
+        animation: rotate 0.6s forwards;
+      }
+    }
+  }
+
+  .feature-icon {
+    font-size: 40px;
+    margin: 20px;
+    transition: transform 0.3s ease;
+
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
     }
   }
 }
