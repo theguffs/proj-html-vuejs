@@ -4,3 +4,31 @@
   padding: 0;
   box-sizing: border-box;
 }
+.left-text1{
+  color: #61e6d2;
+  font-size: 1.8rem;
+  padding-top: 100px;
+  padding-left: 150px;
+}
+.left-text2{
+  font-size: 3rem;
+  padding-left: 150px;
+  font-weight: 600;
+}
+.left-text3{
+ padding-left: 150px;
+}
+
+button{
+  background-color:#61e6d2 ;
+  color: white;
+  padding:10px 25px;
+  border: 0;
+  border-radius: 10px;
+  margin-left: 150px ;
+  width: 200px;
+}
+
+button:hover{
+  background-color: #343142; ;
+}

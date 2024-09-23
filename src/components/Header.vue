@@ -58,10 +58,13 @@ export default {
       <nav class="nav-menu">
         <ul>
           <li v-for="item in mainMenu" :key="item.name">
-            <a href="#">{{ item.name }} <span v-if="item.submenu">▼</span></a>
+            <a href="#">{{ item.name }} 
+              <span>▼</span>
+            </a>
           </li>
         </ul>
       </nav>
+
       <!-- menù a destra-->
 
       <div class="right-menu">
@@ -85,10 +88,9 @@ export default {
 
         <!-- user icon -->
          
-        <i class="fas fa-user"></i>
+        <i class="fa-regular fa-circle-user"></i>
         <div class="search-bar">
           <input type="text" placeholder="Search..." />
-          <i class="fas fa-search"></i>
         </div>
       </div>
     </div>
@@ -118,17 +120,6 @@ export default {
   gap: 30px;
 }
 
-.nav-menu ul li {
-  display: inline-block;
-}
-
-.nav-menu ul li a {
-  text-decoration: none;
-  color: #2d2d2d;
-  font-size: 16px;
-  font-weight: 600;
-  position: relative;
-}
 
 .right-menu {
   display: flex;
@@ -159,6 +150,7 @@ export default {
   padding: 10px;
   display: none;
   flex-direction: column;
+  z-index: 11;
 }
 
 .dropdown li {
@@ -192,6 +184,22 @@ export default {
 
 .language-selector ul {
   display: block;
+}
+
+/*effetti hover*/
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #333; 
+  font-size: 16px;
+  font-weight: 600;
+  display: inline-block;
+  transition: color 0.3s ease; 
+}
+
+.navbar ul li a:hover {
+  color:  #61e6d2; 
+  border-bottom: #61e6d2 solid 2px;
 }
 
 </style>

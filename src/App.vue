@@ -1,11 +1,13 @@
 <script>
 import Header from './components/Header.vue'
 import SectionOne from './components/SectionOne.vue'
+import SectionTwo from './components/SectionTwo.vue'
 
 export default {
   components: {
     Header,
-    SectionOne
+    SectionOne,
+    SectionTwo
   }
 }
 </script>
@@ -13,6 +15,7 @@ export default {
 <template>
   <Header/>
   <SectionOne/>
+  <SectionTwo/>
 </template>
 
 <style scoped>

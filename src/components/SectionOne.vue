@@ -16,7 +16,7 @@ export default {
       <!--parte a SINISTRA-->
       <div class="col-5 left text-left">
         <p class="left-text1">New challenge, new skills</p>
-        <p class="left-text2"><strong>BUILD YOUR OWN <br>LIFE COACHING <br> BUSINESS</strong></p>
+        <p class="left-text2">BUILD YOUR OWN <br>LIFE COACHING <br> BUSINESS</p>
         <p class="left-text3">Whole-life Business Coaching for committed <br> entrepreneus</p>
         <button>
           Get started today
@@ -43,27 +43,7 @@ export default {
 .left{
   padding-left: 150px;
 }
-.left-text1{
-  color: #61e6d2;
-  font-size: 1.8rem;
-  padding-top: 100px;
-  padding-left: 150px;
-}
-.left-text2{
-  font-size: 3rem;
-  padding-left: 150px;
-}
-.left-text3{
- padding-left: 150px;
-}
-button{
-  background-color:#61e6d2 ;
-  color: white;
-  padding:10px 25px;
-  border: 0;
-  border-radius: 10px;
-  margin-left: 150px ;
-}
+
 
 /* parte a destra*/
 
