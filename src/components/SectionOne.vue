@@ -33,38 +33,37 @@ export default {
 </section>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 
-/* parte a sinistra*/
+$background-color: #eceeef;
 
-.bg{
-  background-color: #eceeef;
-}
-.left{
-  padding-left: 150px;
-}
+.bg {
+  background-color: $background-color;
 
+  .left {
+    padding-left: 150px;
 
-/* parte a destra*/
+  }
 
-.globo-container {
-  width: 100%; 
-  height: 100%; 
-  position: relative;
-  overflow: hidden; /* nasconde l'immagine fuori dal contenitore */
- 
-}
-.hero-image {
-  position: absolute; 
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); /* centra esattamente */
-  height: 100%;
-  z-index: 10; /* Porta l'immagine in primo piano */
-}
+  .globo-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden; /* nasconde l'immagine fuori dal contenitore */
 
-.globo-rotante {
-  animation: rotazione-globo 10s linear infinite;
+    .hero-image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); /* centra esattamente */
+      height: 100%;
+      z-index: 10; /* porta l'immagine in primo piano ,  macomunque sotto al dropdown */
+    }
+
+    .globo-rotante {
+      animation: rotazione-globo 10s linear infinite;
+    }
+  }
 }
 
 @keyframes rotazione-globo {

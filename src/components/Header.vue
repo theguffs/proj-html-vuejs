@@ -97,109 +97,103 @@ export default {
   </header>
 </template>
 
-<style scoped>
+<style lang="scss" scope>
+
+$primary-color: #61e6d2;
+$hover-color: #333;
+
 .navbar {
   background-color: white;
   padding: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo img {
+    max-height: 50px;
+  }
+
+  .nav-menu {
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+
+      li {
+        a {
+          text-decoration: none;
+          color: $hover-color; 
+          font-size: 16px;
+          font-weight: 600;
+          display: inline-block;
+          transition: color 0.3s ease; 
+
+          &:hover {
+            color: $primary-color; 
+            border-bottom: $primary-color solid 2px;
+          }
+        }
+      }
+    }
+  }
+
+  .right-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .language-selector {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      position: relative;
+
+      .flag-icon {
+        width: 24px;
+        margin-right: 8px;
+      }
+
+      .dropdown {
+        position: absolute;
+        top: 40px; 
+        right: 0;
+        background-color: white;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        list-style: none;
+        padding: 10px;
+        display: flex; 
+        flex-direction: column;
+        z-index: 11;
+      
+        li {
+          padding: 5px 0;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .search-bar {
+      position: relative;
+
+      input {
+        border: none;
+        border-bottom: 1px solid #ccc;
+        padding: 5px;
+      }
+
+      i {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #888;
+      }
+    }
+  }
 }
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo img {
-  max-height: 50px;
-}
-
-.nav-menu ul {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-}
-
-
-.right-menu {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.language-selector {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  position: relative;
-}
-
-.flag-icon {
-  width: 24px;
-  margin-right: 8px;
-}
-
-.dropdown {
-  position: absolute;
-  top: 40px;
-  right: 0;
-  background-color: white;
-  border: 1px solid #ccc;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  list-style: none;
-  padding: 10px;
-  display: none;
-  flex-direction: column;
-  z-index: 11;
-}
-
-.dropdown li {
-  padding: 5px 0;
-  cursor: pointer;
-}
-
-.search-bar {
-  position: relative;
-}
-
-.search-bar input {
-  border: none;
-  border-bottom: 1px solid #ccc;
-  padding: 5px;
-}
-
-.search-bar i {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #888;
-}
-
-.fas {
-  color: #2d2d2d;
-  font-size: 18px;
-  cursor: pointer;
-}
-
-.language-selector ul {
-  display: block;
-}
-
-/*effetti hover*/
-
-.navbar ul li a {
-  text-decoration: none;
-  color: #333; 
-  font-size: 16px;
-  font-weight: 600;
-  display: inline-block;
-  transition: color 0.3s ease; 
-}
-
-.navbar ul li a:hover {
-  color:  #61e6d2; 
-  border-bottom: #61e6d2 solid 2px;
-}
-
 </style>

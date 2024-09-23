@@ -72,37 +72,53 @@ export default {
 </section>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+
+$primary-color: #61e6d2;
+$hover-background: #343142;
+$button-border: grey;
+
 .features-section {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   text-align: center;
-  justify-content: space-between; 
+  justify-content: space-between;
+
+  .feature {
+    display: flex;
+    text-align: left;
+    padding: 20px;
+    width: calc(33% - 20px);
+
+    .feature-icon {
+      font-size: 40px;
+      margin: 20px;
+    }
+  }
 }
 
-.feature {
-  display: flex;
-  text-align: left;
-  padding: 20px;
-  width: calc(33% - 20px);
-}
-
-.feature-icon {
-  font-size: 40px;
-  margin: 20px;
-}
-
-.button-white{
-  background-color: white;
-  color: #61e6d2 ;
-  border: grey 2px solid;
-}
-
-button:hover{
-  color: white;
-  background-color: #343142; ;
-}
-.container_button{
+.container_button {
   padding: 30px;
+
+  .button-white {
+    background-color: white;
+    color: $primary-color;
+    border: $button-border 2px solid;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+      color: white;
+      background-color: $hover-background;
+    }
+  }
+
+  button {
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+      color: white;
+      background-color: $hover-background;
+    }
+  }
 }
 </style>
