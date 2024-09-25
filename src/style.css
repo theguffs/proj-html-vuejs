@@ -4,6 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+.bg{
+  background-color: #eceeef;
+}
 .left-text1{
   color: #61e6d2;
   font-size: 1.8rem;

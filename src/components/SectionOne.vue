@@ -35,10 +35,6 @@ export default {
 
 <style lang="scss" scoped>
 
-$background-color: #eceeef;
-
-.bg {
-  background-color: $background-color;
 
   .left {
     padding-left: 150px;
@@ -64,7 +60,6 @@ $background-color: #eceeef;
       animation: rotazione-globo 10s linear infinite;
     }
   }
-}
 
 @keyframes rotazione-globo {
   from {
